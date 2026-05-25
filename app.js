@@ -2,7 +2,7 @@ const express = require ('express');
 const app = express();
 const fs = require('fs');
 
-const products = JSON.parse(fs.readFileSync('./data/products.json','utf8'));
+const products = JSON.parse(fs.readFileSync('./database/ecomm.json','utf8'));
 
 
 app.listen(8000, () => {
